@@ -179,6 +179,6 @@ The UML use-case diagram is in [`docs/TIES-UseCase_v0.1.drawio`](docs/TIES-UseCa
 
 ---
 
-## 🔗 Original repository
+## 👥 Team
 
-[D1D02/threat-intelligence-enrichment-system](https://github.com/D1D02/threat-intelligence-enrichment-system)
+Developed by **Andrea Di Donato**, **Alessio Malafronte**, **Jonathan Ragucci** and **Massimo Carlone**.
