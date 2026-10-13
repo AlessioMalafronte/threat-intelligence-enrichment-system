@@ -1,0 +1,71 @@
+.dashboard_extern_div{
+    border: 1px solid red;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    row-gap: 10px;
+    padding: 45px;
+    height: 100vh;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.dashboard_header_div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dashboard_header_children{
+    background-color: #36438E;
+    border-radius: 15px;
+}
+
+.dashboard_alert_div{
+    width: 20%;
+    padding: 20px 30px 20px 30px
+}
+
+.dashboard_alert_number{
+    font-size: 40px;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.dashboard_threat_actors_div{
+    width: 75%;
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dashboard_alert_navigation_icon{
+    border: 1px solid red;
+    height: fit-content;
+    margin: auto;
+}
+
+.dashboard_siem_log_div{
+    border: 1px solid orange;
+    width: 100%;
+    height: auto;
+    background-color: #36438E;
+    border-radius: 15px;
+    padding: 20px 30px 20px 30px;
+}
+
+.dashboard_siem_log_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+}
+
+.dashboard_siem_log_button{
+    background-color: #D2CBFC;
+    font-size: 20px;
+    color: #36438E;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+}

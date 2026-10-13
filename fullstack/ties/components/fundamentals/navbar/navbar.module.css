@@ -1,0 +1,80 @@
+.navbar_extern_div {
+  background-color: #36438e;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 15px;
+}
+
+/* Header con logo e hamburger */
+.navbar_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_logo {
+  color: #fff;
+  margin: 0;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+  display: none; /* desktop hidden */
+}
+
+/* Menu principale */
+.navbar_menu_div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.navbar_menu_button {
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  font-weight: bold;
+  color: #d2cbfc;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.navbar_menu_button:hover {
+  background: #4c5dc3;
+}
+
+.navbar_menu_button_selected {
+  background-color: #4c5dc3;
+}
+
+.navbar_menu_text {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.navbar_menu_button img {
+  filter: invert(1);
+}
+
+/* ---- Responsiveness ---- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* mostra hamburger */
+  }
+
+  .navbar_menu_div {
+    display: none;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .navbar_menu_div.showMenu {
+    display: flex; /* apre menu */
+  }
+}

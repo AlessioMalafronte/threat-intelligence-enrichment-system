@@ -1,0 +1,285 @@
+.siem_extern_div{
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+.siem_intern_div{
+    background-color: #36438E;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    padding: 20px;
+}
+.siem_log_extern_div {
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    min-height: 0; 
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+.list_siem_extern_div {
+    height: 100%;
+    min-height: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.siem_log_extern_right_div{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1.2fr 2fr;
+    gap: 15px;
+    overflow: hidden;
+    height: 100%;
+}
+.list_siem_table {
+    margin-top: 55px;
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #D9D9D9;
+    color: #36438E;
+}
+.list_siem_tcolumn {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.siem_log_intern_div{
+    overflow-y: scroll;
+}
+.list_siem_filter { 
+    position: fixed; 
+    z-index: 10;
+    background-color: #36438E;
+    padding: 5px 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    box-sizing: border-box;
+}
+.date_input {
+    padding: 2px 4px;
+    font-size: 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    width: 130px;
+}
+.react-datepicker {
+    font-size: 12px !important; 
+}
+.react-datepicker__header {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+    width: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+}
+.compact_filter_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+.reset_button {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin-left: 10px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.reset_button:hover {
+    background-color: #ccc;
+}
+.view_alert_extern_div {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    overflow-x: auto;
+    max-width: 100%; 
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%;
+}
+.view_alert_value_div{
+    border: 1px solid gray;
+    background-color: #D9D9D9;
+    color:#36438E;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+}
+.view_alert_raw_extern_div {
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    height: 100%;
+}
+.view_alert_raw_extern_div {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    max-height: 300px;
+    overflow-y: auto;
+    font-family: monospace;
+    font-size: 12px;
+    color: #333;
+}
+.view_alert_raw_line {
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+.raw_key {
+    color: #555;
+}
+.raw_value {
+    color: #000;
+}
+.raw_value_highlighted {
+    color: #36438E;
+    font-weight: 500;
+}
+.raw_value_link {
+    color: #0066cc;
+    text-decoration: underline;
+}
+.raw_value_highlighted_link {
+    color: #36438E;
+    text-decoration: underline;
+}
+.list_siem_row_selected{
+    background-color: #36438E;
+    color: white;
+}
+.list_siem_row:hover{
+    background-color: #737aa5;
+}
+.raw_value_wrapper {
+    position: relative;
+    display: inline-block;
+}
+.hover_preview {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    padding: 4px 8px;
+    font-size: 12px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+    margin-top: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* NUOVI STILI AGGIUNTI PER I PULSANTI E MODAL */
+.alert_actions_container {
+    display: flex;
+    gap: 8px;
+}
+.action_button {
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.2s;
+}
+.take_charge_button {
+    background-color: #4A5568;
+}
+.take_charge_button:hover {
+    background-color: #667EEA;
+}
+.resolve_button {
+    background-color: #2b6cb0;
+}
+.resolve_button:hover {
+    background-color: #2c5282;
+}
+.report_modal_backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+.report_modal {
+    background-color: #36438E;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 400px;
+}
+.report_modal textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #4A5568;
+    color: white;
+    resize: vertical;
+}
+.modal_buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.modal_buttons button {
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.compact_filter_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;          /* spazio tra gli elementi */
+  overflow-x: scroll; /* nasconde eventuali overflow */
+  flex-wrap: nowrap;  /* impedisce di andare a capo */
+  padding: 5px;
+}
+
+.compact_filter_item {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;   /* garantisce larghezza minima */
+}
+
+.date_input {
+  width: 100%;
+}
+
+.reset_button {
+  white-space: nowrap; /* impedisce di spezzare il testo */
+  padding: 6px 12px;
+}
